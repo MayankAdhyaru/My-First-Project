@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 90px;
+  margin-right: 30px;
+  display: block ruby;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  margin: 3%;
+  margin-left: 20%;
+  width: 100%;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+.navbar .icon {
+  display: none;
+}
+.nav-list {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  margin: 0 25px;
+}
+
+.nav-list li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.nav-list li a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: rgb(6, 168, 209);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.nav-list li a:hover::after {
+  color: rgb(6, 168, 209);
+  width: 100%;
+}
+
+.rightNav {
+  width: 70%;
+  padding: 0 23px;
+  text-align: right;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 9px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.8) url("/img/coding.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.firstsection {
+  height: 100vh;
+}
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+  height: 50%;
+}
+
+.firstHalf {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf {
+  width: 30%;
+}
+
+.secondHalf img {
+  position: absolute;
+  left: 175px;
+  top: 175px;
+  width: 120px;
+  border: 4px solid rgb(6, 168, 209);
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  text-align:center;
+  padding: 30px ;
+  font-size: 40px;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-small {
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(6, 168, 209);
+  border: 2px solid rgb(5, 83, 102);
+  transition: 1s;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+
+ .btn-dark{
+   color: black;
+   border: 2px solid gray;
+ }
+
+.section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.paras {
+  padding: 0 60px;
+}
+
+.thumbnail img{
+    width: 250px;
+    border:2px ssolid black;
+    border-radius: 20px;
+}
+.contact{
+  background-color:  rgba(0, 0, 0, 0);
+    height: 500px;
+}
+.text-center{
+    padding-top: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    max-width: 400px;
+    margin: 30px auto;
+}
+.form input{
+    margin: 14px 0;
+    padding:5px 3px;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+.alist{
+  color: rgb(0, 119, 255);
+  list-style-position: inside;
+}
+.text-area{
+    width: 406px;
+    height: 100px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.text-footer{
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa{
+    color: black;
+    background-color: rgb(6, 168, 209);
+    padding: 5px 10px;
+    margin: 7px 0;
+    border: 2px solid black;
+    border-radius:0 7px 0 7px ;
+    background: none;
+    cursor: pointer;
+}
+
+.fa:hover {
+    background-color: rgb(6, 168, 209);
+    border: 2px solid rgb(5, 83, 102);
+    transition: 1s;
+  }
+
+  .icon{
+    margin:25px 10px 25px;
+    
+    color: white;
+    border:2px solid white; 
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon ,.rightNav {
+      float: right;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo {
+      width: 30px;
+      display: block ruby;
+    }
+    .nav-list li a {
+      color: black;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon ,.rightNav {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    .logo {
+      width: 70px;
+      display: block ruby;
+    }
+
+  .rightNav{
+
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+  .nav-list{
+    display: block;
+  }
+  .nav-list li a {
+    color: black;
+  }
+  }
